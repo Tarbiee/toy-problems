@@ -13,7 +13,7 @@ const propmt = require ("prompt-sync") ();//Imports the prompt-sync module
  }
  else {
     let grade;
-    // Calculates the grage based on the input marks
+    // Calculates the grade based on the input marks
     if (marks>=79){
         grade = 'A';
     }
