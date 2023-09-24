@@ -33,4 +33,4 @@ const propmt = require ("prompt-sync") ();//Imports the prompt-sync module
 }
 
  }
- gradeStudent(); // Calls the function to propt user for input and calculate grade
+ gradeStudent(); // Calls the function to propmt user for input and calculate grade
