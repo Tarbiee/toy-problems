@@ -148,8 +148,24 @@ function netSalary(){
     
 
     // NSSF Deductions
-
-    let nssfDeduction = (grossSalary*0.06);//Calculates nssfDeductions
+//Calculates nssfDeductions based on gross salary
+    let nssfDeduction ;
+    if (grossSalary >= 18000){
+        nssfDeduction = 1080;
+    } else if (grossSalary >= 14000){
+        nssfDeduction = 840;
+    } else if (grossSalary >= 10000){
+        nssfDeduction = 600;
+    } else if (grossSalary >= 6000){
+        nssfDeduction = 360;
+    } else if (grossSalary >= 4500){
+        nssfDeduction = 270;
+    } else if (grossSalary >= 3000){
+        nssfDeduction = 100;
+    } else {
+        nssfDeduction = grossSalary * 0.06
+    }
+    
     console.log(`NSSFfDeduction: ${nssfDeduction}`);//displays nssfdDeductions
 
     let netWorth = (grossSalary-( payee + nhifDeductions + nssfDeduction));//Calculates net salary
