@@ -29,62 +29,125 @@ function netSalary(){
     }
     console.log(`Payee: ${payee}`);//Displays calculates payee
 
-    //NHIF Deductions
+    //NHIF Deductions 
 
     let nhifDeductions;// defined nhifdeductions variable
     //Calculates nhifdeductions based on user's gross salary
-    if(grossSalary <= 59999){
-        nhifDeductions = 150;;
-    }
-    else if (grossSalary >= 6000 && salary <= 7999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 8000 && salary <= 11999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 12000 && salary <= 14999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 15000 && salary <= 19999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 20000 && salary <= 24999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 25000 && salary <= 29999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 30000 && salary <= 34999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 35000 && salary <= 39999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 40000 && salary <= 44999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 45000 && salary <= 49999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 50000 && salary <= 59999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 60000 && salary <= 69999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 70000 && salary <= 79999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 80000 && salary <= 89999){
-        nhifDeductions = 300;
-    }
-    else if (grossSalary >= 90000 && salary <= 99999){
-        nhifDeductions = 300;
-    }
-    else if (salary >= 100000){
-        nhifDeductions = 300;
+    switch(true) {
+        case (grossSalary <= 5999):
+            nhifDeductions = 150;   
+            break;
+        case  (grossSalary >= 6000 && grossSalary <= 7999):
+            nhifDeductions = 300; 
+            break;
+        case   (grossSalary >= 8000 && grossSalary <= 11999):
+            nhifDeductions = 400; 
+            break;
+        case  (grossSalary >= 12000 && grossSalary <= 14999):
+            nhifDeductions = 500;
+            break;
+         case  (grossSalary >= 15000 && grossSalary <= 19999):
+            nhifDeductions = 600; 
+            break;
+        case   (grossSalary >= 20000 && grossSalary <= 24999):
+            nhifDeductions = 750;
+            break;
+        case   (grossSalary >= 25000 && grossSalary <= 29999):
+            nhifDeductions = 850;
+            break;
+        case  (grossSalary >= 30000 && grossSalary <= 34999):
+            nhifDeductions = 900;
+            break;
+         case  (grossSalary >= 35000 && grossSalary <= 39999):
+            nhifDeductions = 950;
+            break;
+        case  (grossSalary >= 35000 && grossSalary <= 39999):
+            nhifDeductions = 950;
+            break;
+         case (grossSalary >= 40000 && grossSalary <= 44999):
+            nhifDeductions = 1000; 
+            break;
+        case (grossSalary >= 45000 && grossSalary <= 49999):
+            nhifDeductions = 1100;
+            break;
+        case (grossSalary >= 40000 && grossSalary <= 44999):
+            nhifDeductions = 1000; 
+            break;
+        case (grossSalary >= 50000 && grossSalary <= 59999):
+            nhifDeductions = 1200; 
+             break;
+        case (grossSalary >= 60000 && grossSalary <= 69999):
+            nhifDeductions = 1300;
+             break;
+        case (grossSalary >= 70000 && grossSalary <= 79999):
+            nhifDeductions = 1400;
+            break;
+        case  (grossSalary >= 80000 && grossSalary <= 89999):
+            nhifDeductions = 1500;
+            break;
+        case  (grossSalary >= 90000 && grossSalary <= 99999):
+            nhifDeductions = 1600;
+            break;
+        case  (grossSalary >= 100000):
+            nhifDeductions = 1700;
+            break;
     }
     console.log(`NHIFDeduction: ${nhifDeductions}`);//displays calculated nhifdeductions 
+
+
+
+    // if(grossSalary <= 5999){
+    //     nhifDeductions = 150;;
+    // }
+    // else if (grossSalary >= 6000 && grossSalary <= 7999){
+    //     nhifDeductions = 300;
+    // }
+    // else if (grossSalary >= 8000 && grossSalary <= 11999){
+    //     nhifDeductions = 400;
+    // }
+    // else if (grossSalary >= 12000 && grossSalary <= 14999){
+    //     nhifDeductions = 500;
+    // }
+    // else if (grossSalary >= 15000 && grossSalary <= 19999){
+    //     nhifDeductions = 600;
+    // }
+    // else if (grossSalary >= 20000 && grossSalary <= 24999){
+    //     nhifDeductions = 750;
+    // }
+    // else if (grossSalary >= 25000 && grossSalary <= 29999){
+    //     nhifDeductions = 850;
+    // }
+    // else if (grossSalary >= 30000 && grossSalary <= 34999){
+    //     nhifDeductions = 900;
+    // }
+    // else if (grossSalary >= 35000 && grossSalary <= 39999){
+    //     nhifDeductions = 950;
+    // }
+    // else if (grossSalary >= 40000 && grossSalary <= 44999){
+    //     nhifDeductions = 1000;
+    // }
+    // else if (grossSalary >= 45000 && grossSalary <= 49999){
+    //     nhifDeductions = 1100;
+    // }
+    // else if (grossSalary >= 50000 && grossSalary <= 59999){
+    //     nhifDeductions = 1200;
+    // }
+    // else if (grossSalary >= 60000 && grossSalary <= 69999){
+    //     nhifDeductions = 1300;
+    // }
+    // else if (grossSalary >= 70000 && grossSalary <= 79999){
+    //     nhifDeductions = 1400;
+    // }
+    // else if (grossSalary >= 80000 && grossSalary <= 89999){
+    //     nhifDeductions = 1500;
+    // }
+    // else if (grossSalary >= 90000 && grossSalary <= 99999){
+    //     nhifDeductions = 1600;
+    // }
+    // else if (grossSalary >= 100000){
+    //     nhifDeductions = 1700;
+    // }
+    
 
     // NSSF Deductions
 
