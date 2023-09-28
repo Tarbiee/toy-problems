@@ -161,7 +161,7 @@ function netSalary(){
     } else if (grossSalary >= 4500){
         nssfDeduction = 270;
     } else if (grossSalary >= 3000){
-        nssfDeduction = 100;
+        nssfDeduction = 180;
     } else {
         nssfDeduction = grossSalary * 0.06
     }
