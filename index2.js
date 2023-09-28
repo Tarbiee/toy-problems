@@ -11,7 +11,7 @@ function netSalary(){
     
     let payee;// defined payee variable
     //Calculates payee based on user's gross salary
-    if (grossSalary <= 24000){
+    if (grossSalary <= 24000){ 
         payee = (grossSalary*0.01);
     }
     else if (grossSalary >= 24001 && grossSalary<= 32333){
@@ -93,8 +93,6 @@ function netSalary(){
             break;
     }
     console.log(`NHIFDeduction: ${nhifDeductions}`);//displays calculated nhifdeductions 
-
-
 
     // if(grossSalary <= 5999){
     //     nhifDeductions = 150;;
