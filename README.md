@@ -42,4 +42,4 @@ In order to run the challenges installation of the propmt-sync dependancy is req
 Run every challenge by typing node nameoffile.js and running it in the terminal.
 
 ## Licence
-This project is licensed under the MIT License .SS
+This project is licensed under the MIT License .
